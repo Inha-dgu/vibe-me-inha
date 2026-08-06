@@ -1,3 +1,23 @@
-body{
-    background-color: #ffffff;
+body {
+    background-color: #e9faff;
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heads {
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.name {
+    font-family: "Montserrat", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 50px;
+    font-style: normal;
 }
