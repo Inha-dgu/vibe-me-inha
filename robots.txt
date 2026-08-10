@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://inha-dgu.github.io/vibe-me-inha/sitemap.xml
+Sitemap: https://vibe-me-inha.netlify.app/sitemap.xml
