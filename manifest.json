@@ -1,6 +1,10 @@
 {
   "name": "Inha Kim",
   "short_name": "Inha Kim",
+  "start_url": "/vibe-me-inha/",
+  "display": "standalone",
+  "theme_color": "#7ce4b7",
+  "background_color": "#222222",
   "icons": [
     {
       "src": "images/android-icon-36x36.png",
