@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <OG description="Inha Kim's Introduction">
+        <meta property="og:title" content="Inha Kim | Introduction">
+        <meta property="og:description" content="Inha Kim's Introduction">
+        <meta property="og:image" content="profile.jpg">
+        <meta property="og:url" content="https://inha-dgu.github.io/introduction/">
+        <meta property="og:type" content="website">
+    </OG>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inha Kim | Introduction</title>
-    <styles>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6b985dff27.js" crossorigin="anonymous"></script>
+    <div class="fonts-links">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6b985dff27.js" crossorigin="anonymous"></script>
+    </div>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="card">
         <header>
-            <h1 class="name">Inha Kim</h1>
+            <h1 class="title">Inha Kim</h1>
             <img class="profile" src="profile.jpg" alt="Picture">
         </header>
         <section class="bio">
-            <h2 class="heads">What do I do?</h2>
-            <p>- Majoring in Computer Science and Artificial Intelligence</p>
+            <h2>What do I do?</h2>
+            <p>- Majoring in Computer Science</p>
             <p>- Producing and Arranging Music</p>
-            <h2 class="heads">My Cat</h2>
-            <img class="cat" src="cat.jpg" alt="Cat">
-            <p>My cat is a very cute and shy cat. He is a very good boy.</p>
         </section>
         <nav class="links">
             <a href="https://github.com/inha-dgu"><i class="fa-brands fa-github"></i> Github</a>
@@ -33,6 +38,19 @@
         <button class="button">More about me</button>
         <footer>© 2026 Inha Kim</footer>
     </main>
+    <main class="card">
+        <h2>My Cat</h2>
+        <img class="profile" src="cat.jpg" alt="Cat">
+        <p>My cat is a very cute and shy cat. He is a very good boy.</p>
+    </main>
+    <div class="modal" id="modal">
+        <div class="modal__box">
+            <h2 style="text-align: center;">Contact</h2>
+            <p>Email: dlsgk0753@gmail.com</p>
+            <p>Phone: 010-9027-0083</p>
+            <button class="closeBtn" id="closeBtn">Close</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
