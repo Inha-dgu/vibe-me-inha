@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inha-dgu.github.io/vibe-me-inha/sitemap.xml
