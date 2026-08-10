@@ -7,12 +7,12 @@
 
 /* 브랜드색과 기본 색을 CSS 변수로 정의한다 */
 :root {
-    --brand: #6C5CE7;
-    --brand-hover: rgba(108, 92, 231, 0.3);
-    --bg: #f5f5f5;
-    --card-bg: #ffffff;
-    --text: #222222;
-    --muted: #666666;
+    --brand: #7ce4b7;
+    --brand-hover: rgba(124, 228, 183, 0.3);
+    --bg: #222222;
+    --card-bg: #444444;
+    --text: #ffffff;
+    --muted: #aaaaaa;
 }
 
 /* 페이지 배경과 기본 글자색·폰트를 설정한다 */
@@ -33,6 +33,7 @@ body {
 
 /* 이름(h1)의 크기와 굵기를 정한다 */
 h1 {
+    color: var(--brand);
     font-size: 32px;
     font-weight: 700;
 }
@@ -57,7 +58,8 @@ h2 {
     max-width: 420px;
     padding: 40px;
     border-radius: 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
 }
 
 /* 링크 3개를 가로 한 줄로 배치한다 */
@@ -74,7 +76,7 @@ h2 {
     text-decoration: none;
 }
 .links a:hover {
-    color: #5848c2;
+    color: var(--brand-hover);
     transform: scale(1.05);
     transition: transform 0.2s ease;
 }
@@ -82,7 +84,7 @@ h2 {
 /* 버튼의 배경·글자색·여백을 정한다 */
 .button {
     background-color: var(--brand);
-    color: #ffffff;
+    color: var(--text);
     border: none;
     border-radius: 999px;
     padding: 12px 16px;
@@ -107,13 +109,17 @@ h2 {
     object-position: center;
     margin-inline: auto;
     border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .7);
+    padding: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(var(--brand), 0.5);
     justify-content: center;
     align-items: center;
     text-align: left;
@@ -124,7 +130,9 @@ h2 {
 }
 
 .modal__box {
-    background: #ffffff;
+    background: var(--card-bg);
+    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, .3);
     padding: 32px;
     border-radius: 16px;
     animation: pop .5s ease;
@@ -137,7 +145,15 @@ h2 {
     border-radius: 999px;
     padding:8px 16px;
     font-size: 16px;
+    background-color: var(--brand);
+    color: var(--text);
+    border: none;
     cursor: pointer;
+}
+
+.closeBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--brand-hover);
 }
 
 @keyframes pop {
